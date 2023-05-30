@@ -15,7 +15,8 @@ import Aboutus from "./Pages/Aboutus";
 import Contactus from "./Pages/Contactus";
 import Faqs from "./Pages/Faqs";
 import Event from "./Pages/Event";
-import Withdraw from "./Pages/Withdraw";
+import Withdraw1 from "./Pages/Withdraw1";
+import Withdraw2 from "./Pages/Withdraw2";
 import Notice from "./Pages/Notice";
 import Edit_Personal from "./Pages/Edit_Personal";
 import Withdraw_Password from "./Pages/Withdraw_Password";
@@ -39,7 +40,8 @@ function App() {
         <Route path="/contact_us" element={<Contactus />} />
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/events" element={<Event />} />
-        <Route path="/withdraw" element={<Withdraw />} />
+        <Route path="/withdraw_his" element={<Withdraw1 />} />
+        <Route path="/withdraw_now" element={<Withdraw2 />} />
         <Route path="/notification" element={<Notice />} />
         <Route path="/change_profile" element={<Edit_Personal />} />
         <Route path="/change_withdraw_pwd" element={<Withdraw_Password />} />

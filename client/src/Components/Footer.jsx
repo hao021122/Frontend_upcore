@@ -1,9 +1,9 @@
 import React from "react";
 import "../App.css";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import AddCircleOutlineOutlinedIcon from "@mui/icons-material/AddCircleOutlineOutlined";
-import NotificationsActiveOutlinedIcon from "@mui/icons-material/NotificationsActiveOutlined";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import playImage from "../assets/play.svg";
+import bellImage from "../assets/ringtone.svg";
+import profileImage from "../assets/profile.svg";
 
 export default function Footer() {
   return (
@@ -20,25 +20,21 @@ export default function Footer() {
         <li className="list">
           <a href="">
             <span className="icon">
-              <AddCircleOutlineOutlinedIcon
-                sx={{ fontSize: 30, color: "#fff" }}
-              />
+              <img className="footer-image" src={playImage} />
             </span>
           </a>
         </li>
         <li className="list">
           <a href="">
             <span className="icon">
-              <NotificationsActiveOutlinedIcon
-                sx={{ fontSize: 30, color: "#fff" }}
-              />
+              <img className="footer-image" src={bellImage} />
             </span>
           </a>
         </li>
         <li className="list">
           <a href="">
             <span className="icon">
-              <AccountCircleOutlinedIcon sx={{ fontSize: 30, color: "#fff" }} />
+              <img className="footer-image" src={profileImage} />
             </span>
           </a>
         </li>

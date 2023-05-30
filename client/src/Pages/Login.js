@@ -71,17 +71,15 @@ export default function Login() {
 
           <div className="button">
             <div className="sign-up">Sign in</div>
-            <div className="sign-up use-phone">Use Phone Number</div>
+            <div className="sign-up use-phone">
+              <Link to="/register">Create Account</Link>
+            </div>
           </div>
         </Form>
       </Formik>
       <div className="link opt">
         <Link className="links" to="/">
           Forget Password
-        </Link>
-        <p> | </p>
-        <Link className="links" to="/">
-          Create Account
         </Link>
       </div>
     </div>

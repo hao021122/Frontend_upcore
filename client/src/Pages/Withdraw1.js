@@ -1,8 +1,7 @@
 import React from "react";
 import "../App.css";
 import Back from "../Components/back";
-import LocalAtmIcon from "@mui/icons-material/LocalAtm";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import withdrawImage from "../assets/withdraw.svg";
 import Footer from "../Components/Footer";
 
 export default function Withdraw() {
@@ -14,7 +13,7 @@ export default function Withdraw() {
         </div>
         <div className="second-row">
           <span className="icon">
-            <LocalAtmIcon sx={{ fontSize: 30, color: "#fff" }} />
+            <img className="icon-image" src={withdrawImage} />
           </span>
           <span className="title">Withdraw</span>
         </div>

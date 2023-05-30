@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import Back from "../Components/back";
-import NotificationsActiveOutlinedIcon from "@mui/icons-material/NotificationsActiveOutlined";
+import bellImage from "../assets/ringtone.svg";
 import Footer from "../Components/Footer";
 
 export default function Notice() {
@@ -13,9 +13,7 @@ export default function Notice() {
         </div>
         <div className="second-row">
           <span className="icon">
-            <NotificationsActiveOutlinedIcon
-              sx={{ fontSize: 30, color: "#fff" }}
-            />
+            <img className="icon-image" src={bellImage} />
           </span>
           <span className="title">Notice</span>
         </div>

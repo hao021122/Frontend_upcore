@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import Back from "../Components/back";
-import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import certImage from "../assets/Certificate.svg";
 import Footer from "../Components/Footer";
 
 export default function Cert() {
@@ -13,7 +13,7 @@ export default function Cert() {
         </div>
         <div className="second-row">
           <span className="icon">
-            <WorkspacePremiumIcon sx={{ fontSize: 30, color: "#fff" }} />
+            <img className="icon-image" src={certImage} />
           </span>
           <span className="title">Certificates</span>
         </div>

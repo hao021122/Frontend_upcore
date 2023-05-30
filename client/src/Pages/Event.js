@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import Back from "../Components/back";
-import EventNoteIcon from "@mui/icons-material/EventNote";
+import eventImage from "../assets/event.svg";
 import Footer from "../Components/Footer";
 
 export default function Event() {
@@ -13,7 +13,7 @@ export default function Event() {
         </div>
         <div className="second-row">
           <span className="icon">
-            <EventNoteIcon sx={{ fontSize: 30, color: "#fff" }} />
+            <img className="icon-image" src={eventImage} />
           </span>
           <span className="title">Latest Event</span>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Back from "../Components/back";
-import FactCheckIcon from "@mui/icons-material/FactCheck";
+import Term from "../assets/terms.svg";
 import Footer from "../Components/Footer";
 
 export default function Terms() {
@@ -12,7 +12,7 @@ export default function Terms() {
         </div>
         <div className="second-row">
           <span className="icon">
-            <FactCheckIcon sx={{ fontSize: 30, color: "#fff" }} />
+            <img className="icon-image" src={Term} />
           </span>
           <span className="title">Terms</span>
         </div>

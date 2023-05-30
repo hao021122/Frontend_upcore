@@ -3,7 +3,7 @@ import "../App.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Back from "../Components/back";
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import withdrawImage from "../assets/withdraw.svg";
 import Footer from "../Components/Footer";
 
 export default function Withdraw_Password() {
@@ -27,7 +27,7 @@ export default function Withdraw_Password() {
         </div>
         <div className="second-row">
           <span className="icon">
-            <InfoOutlinedIcon sx={{ fontSize: 30, color: "#fff" }} />
+            <img className="icon-image" src={withdrawImage} />
           </span>
           <span className="title">Withdraw Password</span>
         </div>

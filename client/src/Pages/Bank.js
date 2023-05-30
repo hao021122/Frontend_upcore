@@ -3,7 +3,7 @@ import "../App.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Back from "../Components/back";
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
+import bankImage from "../assets/bank.svg";
 import Footer from "../Components/Footer";
 
 export default function Bank() {
@@ -30,9 +30,9 @@ export default function Bank() {
         </div>
         <div className="second-row">
           <div className="icon">
-            <AccountBalanceIcon sx={{ fontSize: 30, color: "#fff" }} />
+            <img className="icon-image" src={bankImage} />
           </div>
-          <div className="title">Bank</div>
+          <div className="title">Deposit</div>
         </div>
         <div className="third-row">
           <p>Dear users, in order to protect the security</p>

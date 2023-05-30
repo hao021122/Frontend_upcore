@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: radial-gradient(circle, #9b59b6, #211626);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 576px;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.welcome {
+  margin: 150px;
+}
+
+.button {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up {
+  background-color: #c2701b; /* Green */
+  color: #fff;
+  width: 350px;
+  border-radius: 20px;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.sign-up a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sign-up:active {
+  background-color: #3e7d32; /* Cyan */
+}
+
+.link {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.link a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.opt {
+  display: flex;
+  color: #fff;
+}
+
+.links {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Login */
+.login-title {
+  margin: 50px;
+  text-align: left;
+}
+
+.use-phone {
+  background-color: #5a3795;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Register */
+.register-text {
+  margin: 50px;
+  align-self: self-start;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.errorMsg {
+  color: red;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  resize: vertical;
+  font-size: 1rem;
+  margin: 10px;
+  color: #a7a2a2;
+}
+
+.checkbox-field {
+  margin: 10px;
+}
+
+.checkbox-field label {
+  padding-left: 10px;
+  color: #fff;
+}
+
+/* Home */
+.card {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.card .cardBox {
+  position: relative;
+  background: var(--white);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.small {
+  height: 15%;
+}
+
+/* Back button.jsx */
+.header {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  margin: 10px;
+}
+
+.first-row {
+  align-items: start !important;
+}
+
+.second-row {
+  display: flex;
+  margin-top: 20px;
+}
+
+.second-row .title {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.third-row {
+  align-self: flex-start;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 70%;
+  height: 60px;
+  margin: 20px;
+  color: #fff;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  align-items: center;
+  line-height: 50px;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: space-between; /* Add this property */
+  width: 100%; /* Add this property */
+  padding: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #fff;
+  height: 40px;
+  border-radius: 20px;
+  width: 40%;
+  line-height: 90px;
+}
+
+.footer ul li {
+  position: relative;
+  list-style: none;
+}
+
+.footer ul li a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.footer ul li a .f-icon {
+  position: relative;
+  display: block;
+  line-height: 25px;
+  text-align: center;
+}
+
+.footer ul li a .f-title {
+  position: relative;
+  display: block;
+  line-height: 55px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Transaction History */
+.one {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.bigBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 20px;
+}
+
+.option {
+  text-align: end;
+}
+
+.box .content {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.box .content .icon {
+  margin: 10px;
+}
+
+.box .content .content-text {
+  margin-left: 20px;
+}
+
+.box-footer {
+  border-top: 1px solid #a7a2a2;
+}
+
+.data {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.data-top {
+  margin-bottom: 10px;
+}
+
+.data-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status.pending {
+  width: 100px;
+  text-align: center;
+  padding: 2px 4px;
+  background: #727272;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status.completed {
+  width: 100px;
+  text-align: center;
+  padding: 2px 4px;
+  background: #00a27a;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status.rejected {
+  width: 100px;
+  text-align: center;
+  padding: 2px 4px;
+  background: #cf4f51;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status.successfully {
+  width: 100px;
+  text-align: center;
+  padding: 2px 4px;
+  background: #c2701b;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* .checkbox-group label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+} */
+
+.checkbox-group input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+  background-color: #ccc;
+}
+
+.checkbox-label {
+  font-size: 16px;
+}
+
+.checkbox-group .wallet {
+  margin-left: 15px;
+}
+
+.checkbox-group .bank {
+  margin-left: 15px;
+}
+
+.dollar {
+  font-size: 2rem;
+  color: gold;
+}
+
+.small {
+  width: 85%;
+}
+
+.box.small.left {
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.box.small.right {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.history {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.history-row1 {
+  margin-bottom: 10px;
+}
+
+.history-row2 {
+  border-top: 2px solid #fff;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.label {
+  width: 90%;
+  line-height: 70px;
+}
+
+.grid {
+  row-gap: 20px;
+}
+
+.full {
+  width: 100%;
+}

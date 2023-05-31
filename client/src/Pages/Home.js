@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
+import WhatsAppIcon from "../assets/whatsapp.png";
 import termImage from "../assets/terms.svg";
 import aboutImage from "../assets/about.svg";
 import certImage from "../assets/Certificate.svg";
@@ -18,6 +19,35 @@ export default function Home() {
   return (
     <div className="content">
       <div className="center">
+        <div className="history margin">
+          <div className="option">
+            <img className="profile-image" src={Bronze} />
+          </div>
+          <div className="history-row1 flex-row space-between">
+            <div>
+              <span className="content-text">
+                <p className="title">Active Total Balance</p>
+                <p className="dollar">$8,888.00</p>
+              </span>
+            </div>
+            <div>
+              <span className="button">
+                <div className="status successfully">Testing123</div>
+              </span>
+            </div>
+          </div>
+          <div className="history-row2 flex-row space-between">
+            <div className="data">
+              <div className="title">Party Code</div>
+            </div>
+            <div className="data">
+              <div className="circle">
+                <img className="footer-image" src={WhatsAppIcon} />
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="card">
           <div className="cardBox">
             <span className="icon">

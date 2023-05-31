@@ -20,7 +20,17 @@ export default function Aboutus() {
       </div>
 
       <div className="box">
-        <div className="content"></div>
+        <div className="content">
+          <p>
+            TEACODE provides developers, agencies and merchants around the world
+            with the tools and infrastructure to sell on the internet the way
+            they want. From newly established startups to large enterprises, our
+            customizable backend creates innova=ve shopping experiences today
+            and is ready for what comes next. Crea=ng the best headless
+            ecommerce plaAorm requires not only a bold product vision, but also
+            ac=onable values that guide our day-to-day work and decisions.
+          </p>
+        </div>
       </div>
       <Footer />
     </div>

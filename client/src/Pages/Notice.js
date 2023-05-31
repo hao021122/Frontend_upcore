@@ -19,9 +19,35 @@ export default function Notice() {
         </div>
       </div>
 
-      <div className="box">
-        <div className="content"></div>
+      <div className="bigBox">
+        <div className="box">
+          <div className="content">
+            <p>
+              The system will be maintained for 24 hours on January 1, 2023.
+              Please understand that the update will be completed on January 2,
+              2023
+            </p>
+          </div>
+        </div>
+        <div className="box">
+          <div className="content">
+            <p>
+              The system will be maintained for 24 hours on January 1, 2023.
+              Please understand that the update will be completed on January 2,
+              2023
+            </p>
+          </div>
+        </div>
+        <div className="box">
+          <div className="content">
+            <p>
+              Congratulations, you have won the reward, please contact customer
+              service to get the reward
+            </p>
+          </div>
+        </div>
       </div>
+
       <Footer />
     </div>
   );

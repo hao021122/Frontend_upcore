@@ -21,37 +21,39 @@ export default function Edit_Personal() {
         </div>
       </div>
 
-      <div className="box small left">
-        <div>
-          <span>Profile Image</span>
+      <div className="bigBox">
+        <div className="box small left">
           <div>
-            <span></span>
-            <span>
-              <ArrowForwardIosIcon />
-            </span>
+            <span>Profile Image</span>
+            <div>
+              <span></span>
+              <span>
+                <ArrowForwardIosIcon />
+              </span>
+            </div>
+          </div>
+          <div>
+            <span>Username</span>
+            <div>
+              <span>Testing 123</span>
+            </div>
+          </div>
+          <div>
+            <span>Gender</span>
+            <div>
+              <span>Male</span>
+              <span>
+                <ArrowForwardIosIcon />
+              </span>
+            </div>
           </div>
         </div>
-        <div>
-          <span>Username</span>
-          <div>
-            <span>Testing 123</span>
-          </div>
+        <div className="box small right">
+          <span>Change Withdraw Password</span>
+          <span>Change Security PIN</span>
         </div>
-        <div>
-          <span>Gender</span>
-          <div>
-            <span>Male</span>
-            <span>
-              <ArrowForwardIosIcon />
-            </span>
-          </div>
-        </div>
+        <div className="box small left">logout</div>
       </div>
-      <div className="box small right">
-        <span>Change Withdraw Password</span>
-        <span>Change Security PIN</span>
-      </div>
-      <div className="box small left">logout</div>
       <Footer />
     </div>
   );

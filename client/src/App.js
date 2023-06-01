@@ -18,8 +18,8 @@ import Event from "./Pages/Event";
 import Withdraw1 from "./Pages/Withdraw1";
 import Withdraw2 from "./Pages/Withdraw2";
 import Notice from "./Pages/Notice";
-import Edit_Personal from "./Pages/Edit_Personal";
-import Withdraw_Password from "./Pages/Withdraw_Password";
+import EditPersonal from "./Pages/Edit_Personal";
+import WithdrawPassword from "./Pages/Withdraw_Password";
 
 function App() {
   return (
@@ -43,8 +43,8 @@ function App() {
         <Route path="/withdraw_his" element={<Withdraw1 />} />
         <Route path="/withdraw_now" element={<Withdraw2 />} />
         <Route path="/notification" element={<Notice />} />
-        <Route path="/change_profile" element={<Edit_Personal />} />
-        <Route path="/change_withdraw_pwd" element={<Withdraw_Password />} />
+        <Route path="/change_profile" element={<EditPersonal />} />
+        <Route path="/change_withdraw_pwd" element={<WithdrawPassword />} />
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
     </div>

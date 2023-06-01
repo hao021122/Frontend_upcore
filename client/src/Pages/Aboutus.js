@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import Back from "../Components/back";
+import Back from "../Components/Back";
 import About from "../assets/about.svg";
 import Footer from "../Components/Footer";
 
@@ -13,7 +13,7 @@ export default function Aboutus() {
         </div>
         <div className="second-row">
           <span className="icon">
-            <img className="icon-image" src={About} />
+            <img className="icon-image" src={About} alt="About us image" />
           </span>
           <span className="title">About us</span>
         </div>

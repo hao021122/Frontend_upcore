@@ -41,7 +41,7 @@ export default function Withdraw_Password() {
         >
           <Form className="formContainer grid">
             <p>Change Login Password</p>
-            <div className="box left space-between">
+            <div className="box small left space-between">
               <span className="label">Old Password</span>
               <Field
                 id="password"
@@ -50,7 +50,7 @@ export default function Withdraw_Password() {
                 placeholder="Type Password"
               />
             </div>
-            <div className="box right space-between">
+            <div className="box small right space-between">
               <span className="label">New Password</span>
               <Field
                 id="password"
@@ -59,7 +59,7 @@ export default function Withdraw_Password() {
                 placeholder="Type Password"
               />
             </div>
-            <div className="box left space-between">
+            <div className="box small left space-between">
               <span className="label">Confirm New Password</span>
               <Field
                 id="password"

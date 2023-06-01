@@ -31,6 +31,12 @@ export default function Home() {
   const handleToDeposit = () => {
     navigate("/bank_info");
   };
+  const handleToFaqs = () => {
+    navigate("/faqs");
+  };
+  const handelToEvent = () => {
+    navigate("/events");
+  };
   return (
     <div className="content">
       <div className="center">
@@ -110,16 +116,16 @@ export default function Home() {
             </span>
             <span className="title">Deposit</span>
           </div>
-          <div className="cardBox">
+          <div className="cardBox" onClick={handleToFaqs}>
             <span className="icon">
-              <img className="home-icon" src={faqImage} />
+              <img className="home-icon" src={faqImage} alt="FAQ image" />
             </span>
             <span className="title">FAQ</span>
           </div>
         </div>
 
         <div className="card one">
-          <div className="cardBox">
+          <div className="cardBox" onClick={handelToEvent}>
             <span className="icon">
               <img className="home-icon" src={eventImage} />
             </span>

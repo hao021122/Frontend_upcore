@@ -39,8 +39,10 @@ export default function Login() {
       <div className="welcome register-text">
         <h1>Login to</h1>
         <h1>Your Account</h1>
-        <p>Sign With Username or email and</p>
+        <div className="register-text-small">
+        <p>Sign with Username or email and</p>
         <p>password to use your account</p>
+        </div>
       </div>
 
       <Formik

@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: radial-gradient(circle, #9b59b6, #211626);
+  background-color: #322f32; /* Grey */
 }
 
 * {
@@ -39,8 +39,8 @@ body {
 }
 
 .sign-up {
-  background-color: #c2701b; /* Green */
-  color: #fff;
+  background-color: #e6c222; /* Yellow */
+  color: #322f32; /* Grey */
   width: 350px;
   border-radius: 20px;
   padding: 16px 32px;
@@ -100,6 +100,11 @@ body {
 .register-text {
   margin: 50px;
   align-self: self-start;
+  color: #e6c222;
+}
+
+.register-text-small{
+  color: #ffffff8c ; /*Light Yellow */
 }
 
 .formContainer {

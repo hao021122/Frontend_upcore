@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import Back from "../Components/Back";
+import Back from "../Components/back";
 import About from "../assets/about.svg";
 import Footer from "../Components/Footer";
 

@@ -16,12 +16,31 @@ import Footer from "../Components/Footer";
 
 export default function Home() {
   const navigate = useNavigate();
+  const handleToTerms = () => {
+    navigate("/terms");
+  };
+  const handleToAboutUs = () => {
+    navigate("/about_us");
+  };
+  const handleToCertificate = () => {
+    navigate("/certs");
+  };
+  const handleToWithdraw = () => {
+    navigate("/");
+  };
+  const handleToDeposit = () => {
+    navigate("/bank_info");
+  };
   return (
     <div className="content">
       <div className="center">
         <div className="history margin">
           <div className="option">
-            <img className="profile-image" src={Bronze} />
+            <img
+              className="profile-image"
+              src={Bronze}
+              alt="User Profile Image"
+            />
           </div>
           <div className="history-row1 flex-row space-between">
             <div>
@@ -42,28 +61,40 @@ export default function Home() {
             </div>
             <div className="data">
               <div className="circle">
-                <img className="footer-image" src={WhatsAppIcon} />
+                <img
+                  className="footer-image"
+                  src={WhatsAppIcon}
+                  alt="Whatsapp Icon"
+                />
               </div>
             </div>
           </div>
         </div>
 
         <div className="card">
-          <div className="cardBox">
+          <div className="cardBox" onClick={handleToTerms}>
             <span className="icon">
-              <img className="home-icon" src={termImage} />
+              <img className="home-icon" src={termImage} alt="Terms Image" />
             </span>
             <span className="title">Terms</span>
           </div>
-          <div className="cardBox">
+          <div className="cardBox" onClick={handleToAboutUs}>
             <span className="icon">
-              <img className="home-icon" src={aboutImage} />
+              <img
+                className="home-icon"
+                src={aboutImage}
+                alt="About Us Image"
+              />
             </span>
             <span className="title">About us</span>
           </div>
-          <div className="cardBox">
+          <div className="cardBox" onClick={handleToCertificate}>
             <span className="icon">
-              <img className="home-icon" src={certImage} />
+              <img
+                className="home-icon"
+                src={certImage}
+                alt="Certificate Image"
+              />
             </span>
             <span className="title">Certificate</span>
           </div>
@@ -73,9 +104,9 @@ export default function Home() {
             </span>
             <span className="title">Withdraw</span>
           </div>
-          <div className="cardBox">
+          <div className="cardBox" onClick={handleToDeposit}>
             <span className="icon">
-              <img className="home-icon" src={bankImage} />
+              <img className="home-icon" src={bankImage} alt="Deposit Image" />
             </span>
             <span className="title">Deposit</span>
           </div>

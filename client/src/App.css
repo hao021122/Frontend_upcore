@@ -39,6 +39,7 @@ body {
   margin: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .sign-up {
@@ -106,13 +107,14 @@ body {
   color: #e6c222;
 }
 
-.register-text-small{
-  color: #ffffff8c ; /*Light Yellow */
+.register-text-small {
+  color: #ffffff8c; /*Light Yellow */
 }
 
 .formContainer {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .errorMsg {
@@ -186,6 +188,7 @@ input[type="number"] {
   flex-direction: column;
   align-self: start;
   margin: 10px;
+  width: 100%;
 }
 
 .first-row {
@@ -443,6 +446,11 @@ input[type="number"] {
   flex-direction: row;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .history {
   width: 100%;
   align-self: flex-start;
@@ -526,4 +534,17 @@ input[type="number"] {
   height: 50px;
   border-radius: 50%;
   background-color: #fff;
+}
+
+.toggle-password {
+  position: absolute;
+  transform: translate(0-50%);
+  right: 33%;
+  top: 59%;
+  cursor: pointer;
+}
+
+.big-title {
+  font-weight: 700;
+  font-size: 1.5rem;
 }

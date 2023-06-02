@@ -60,7 +60,6 @@ export default function Login() {
             type="text"
             placeholder="Username"
           />
-
           <Field
             id="password"
             name="password"

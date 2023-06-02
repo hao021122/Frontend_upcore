@@ -23,22 +23,28 @@ export default function Edit_Personal() {
 
       <div className="bigBox">
         <div className="box small left">
-          <div>
-            <span>Profile Image</span>
+          <div className="flex-row space-between">
             <div>
-              <span></span>
+              <span>Profile Image</span>
+            </div>
+            <div>
+              <span>
+                <AccountCircleOutlinedIcon
+                  sx={{ fontSize: 30, color: "black" }}
+                />
+              </span>
               <span>
                 <ArrowForwardIosIcon />
               </span>
             </div>
           </div>
-          <div>
+          <div className="flex-row space-between">
             <span>Username</span>
             <div>
               <span>Testing 123</span>
             </div>
           </div>
-          <div>
+          <div className="flex-row space-between">
             <span>Gender</span>
             <div>
               <span>Male</span>
@@ -48,7 +54,7 @@ export default function Edit_Personal() {
             </div>
           </div>
         </div>
-        <div className="box small right">
+        <div className="box small right flex-column ">
           <span>Change Withdraw Password</span>
           <span>Change Security PIN</span>
         </div>

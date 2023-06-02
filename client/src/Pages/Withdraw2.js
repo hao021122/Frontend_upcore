@@ -37,7 +37,7 @@ export default function Withdraw() {
       <div className="history">
         <div className="history-row1 flex-row space-between">
           <div>
-            <span className="content-text">
+            <span className="content-text white">
               <p>Withdraw Now</p>
               <p>$8,420.00</p>
             </span>
@@ -48,9 +48,13 @@ export default function Withdraw() {
             </span>
           </div>
         </div>
-        <div className="history-row2">
-          <span>21 July 2020, 10: 38 AM</span>
-          <span className="status successfully">Successfully</span>
+        <div className="history-row2 flex-row space-between">
+          <div className="data white">
+            <span>21 July 2020, 10: 38 AM</span>
+          </div>
+          <div className="data white">
+            <span className="status successfully">Successfully</span>
+          </div>
         </div>
       </div>
 
@@ -61,30 +65,34 @@ export default function Withdraw() {
             name="withdrawAmount"
             component="span"
           />
-          <Field
-            autoComplete="off"
-            // id="inputCreatePost"
-            type="number"
-            name="withdrawAmount"
-            placeholder="TYPE HERE"
-          />
+          <div className="input-field space-between">
+            <Field
+              autoComplete="off"
+              // id="inputCreatePost"
+              type="number"
+              name="withdrawAmount"
+              placeholder="TYPE HERE"
+            />
+          </div>
           <ErrorMessage
             className="errorMsg"
             name="withdrawPassword"
             component="span"
           />
-          <Field
-            autoComplete="off"
-            // id="inputCreatePost"
-            type="text"
-            name="withdrawPassword"
-            placeholder="TYPE HERE"
-          />
+          <div className="input-field space-between">
+            <Field
+              autoComplete="off"
+              // id="inputCreatePost"
+              type="text"
+              name="withdrawPassword"
+              placeholder="TYPE HERE"
+            />
+          </div>
         </Form>
       </Formik>
       <div className="flex">
-        <span className="title">Withdraw Method</span>
-        <span className="title">
+        <span className="big-title white">Withdraw Method</span>
+        <span className="title white">
           Withdrawal will be transferred to Crypto Wallet
         </span>
       </div>

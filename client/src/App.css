@@ -1,11 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+:root {
+  --black: #000;
+  --chinesesliver: #ccc;
+  --completed: #00a27a;
+  --cyan: #3e7d32;
+  --green: #25d366;
+  --dimgrey: #727272;
+  --gold: #ffd700;
+  --grey: #322f32;
+  --lightGrey: #a7a2a2;
+  --lightYellow: #ffffff8c;
+  --purple: #5a3795;
+  --white: #fff;
+  --red: #ff0000;
+  --rejected: #cf4f51;
+  --successfully: #c2701b;
+  --yellow: #e6c222;
+}
+
+/* Share CSS --> Here */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: #322f32; /* Grey */
+  background-color: var(--grey); /* Grey */
 }
 
 * {
@@ -15,6 +35,124 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.grid {
+  row-gap: 20px;
+}
+
+.full {
+  width: 100%;
+}
+
+.margin {
+  margin-top: 35px;
+}
+
+.bigBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 20px;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--white);
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Font Size & Color */
+.title {
+  color: var(--black);
+}
+
+.white {
+  color: var(--white);
+}
+
+.big-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.dollar {
+  font-size: 2rem;
+  color: var(--gold);
+}
+
+/* All Image Size or Layout */
+.image {
+  width: 150px;
+  height: 150px;
+}
+
+.icon-image {
+  width: 50px;
+  height: 50px;
+}
+
+.home-icon {
+  width: 55px;
+  height: 65px;
+}
+
+.footer-image {
+  width: 35px;
+  height: 35px;
+}
+
+.profile-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: var(--white);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image-border {
+  width: 55px;
+  height: 55px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+/* Whole Layout Container */
 .center {
   display: flex;
   flex-direction: column;
@@ -24,13 +162,17 @@ body {
   width: 576px;
 }
 
+/* Image */
 .logo {
   margin-top: 20px;
 }
 
+/* Login, Register & landing Welcome Message */
 .welcome {
-  margin: 200px;
-  color: #fff;
+  margin: 100px;
+  color: var(--white);
+  text-align: center;
+  font-size: 25px;
 }
 
 .button {
@@ -40,14 +182,14 @@ body {
 }
 
 .sign-up {
-  background-color: #e6c222; /* Yellow */
-  color: #322f32; /* Grey */
+  background-color: var(--yellow);
+  color: var(--grey);
   width: 350px;
   border-radius: 20px;
   padding: 16px 32px;
   text-align: center;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -55,13 +197,25 @@ body {
 
 .sign-up a {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
 }
 
 .sign-up:active {
-  background-color: #3e7d32; /* Cyan */
+  background-color: var(--cyan);
 }
 
+.toggle-password {
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+/* Option and Home Profile Image */
+.opt {
+  display: flex;
+  color: var(--white);
+}
+
+/* Forget Password & Create Account Link */
 .link {
   text-align: center;
   margin-top: 10px;
@@ -69,17 +223,7 @@ body {
 }
 .link a {
   text-decoration: none;
-  color: #fff;
-}
-
-.opt {
-  display: flex;
-  color: #fff;
-}
-
-.links {
-  margin-left: 10px;
-  margin-right: 10px;
+  color: var(--white);
 }
 
 /* Login */
@@ -88,24 +232,29 @@ body {
   text-align: left;
 }
 
-.use-phone {
-  background-color: #5a3795;
+.create-account {
+  background-color: var(--purple);
 }
 
-.login-form {
-  display: flex;
-  flex-direction: column;
+.input-field {
+  width: 100%;
+  height: 55px;
+  background-color: var(--white);
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 /* Register */
 .register-text {
   margin: 50px;
   align-self: self-start;
-  color: #e6c222;
+  color: var(--yellow);
 }
 
-.register-text-small{
-  color: #ffffff8c ; /*Light Yellow */
+.register-text-small {
+  color: #ffffff8c; /*Light Yellow */
+  text-align: center;
 }
 
 .formContainer {
@@ -113,11 +262,13 @@ body {
   flex-direction: column;
 }
 
+/* Register Error Message */
 .errorMsg {
-  color: red;
+  color: var(--red);
   text-align: center;
 }
 
+/* All Input Field */
 input[type="text"],
 input[type="password"],
 input[type="number"] {
@@ -128,16 +279,17 @@ input[type="number"] {
   resize: vertical;
   font-size: 1rem;
   margin: 10px;
-  color: #a7a2a2;
+  color: var(--lightGrey);
 }
 
+/* Register Checkbox */
 .checkbox-field {
   margin: 10px;
 }
 
 .checkbox-field label {
   padding-left: 10px;
-  color: #fff;
+  color: var(--white);
 }
 
 /* Home */
@@ -159,24 +311,58 @@ input[type="number"] {
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   cursor: pointer;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
 }
 
-.one {
+.card2 {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
   grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
 }
 
-.small {
-  height: 15%;
+.card2 .cardBox {
+  position: relative;
+  background: var(--white);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 2px solid var(--white);
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
 }
 
-.title {
-  color: #fff;
+.card3 {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
-/* Back button.jsx */
+.card3 .cardBox {
+  position: relative;
+  background: var(--white);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 2px solid var(--white);
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
 .header {
   position: relative;
   top: 0;
@@ -198,23 +384,13 @@ input[type="number"] {
 .second-row .title {
   margin-left: 10px;
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--white);
 }
 
 .third-row {
   align-self: flex-start;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 35px;
-}
-
-.box {
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: #e6c222;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
 }
 
 /* Footer */
@@ -224,23 +400,25 @@ input[type="number"] {
   width: 70%;
   height: 60px;
   margin: 20px;
-  color: #fff;
+  color: var(--white);
   border-radius: 20px;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   align-items: center;
   line-height: 50px;
 }
 
+/* Footer Unorder-list */
 .footer ul {
   display: flex;
-  justify-content: space-between; /* Add this property */
-  width: 100%; /* Add this property */
+  justify-content: space-between;
+  width: 100%;
   padding: 10px;
 }
-.ul-list{
 
-  color: #e6c222;
+.ul-list {
+  color: var(--yellow);
 }
+
 .list {
   display: flex;
   flex-direction: column;
@@ -249,14 +427,16 @@ input[type="number"] {
   height: 100%;
 }
 
+/* Footer Home btn */
 .btn {
   display: flex;
   flex-direction: row;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   height: 40px;
   border-radius: 20px;
   width: 40%;
   line-height: 90px;
+  background-color: #fff;
 }
 
 .footer ul li {
@@ -285,19 +465,6 @@ input[type="number"] {
   color: #fff;
 }
 
-/* Transaction History */
-.one {
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.bigBox {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  grid-row-gap: 20px;
-}
-
 .option {
   text-align: end;
 }
@@ -316,7 +483,7 @@ input[type="number"] {
 }
 
 .box-footer {
-  border-top: 1px solid #a7a2a2;
+  border-top: 1px solid var(--lightGrey);
 }
 
 .data {
@@ -334,12 +501,13 @@ input[type="number"] {
   justify-content: space-between;
 }
 
+/* Status Button */
 .status.pending {
   width: 100px;
   text-align: center;
   padding: 2px 4px;
-  background: #727272;
-  color: #fff;
+  background: var(--dimgrey);
+  color: var(--white);
   border-radius: 10px;
   font-size: 14px;
   font-weight: 500;
@@ -349,8 +517,8 @@ input[type="number"] {
   width: 100px;
   text-align: center;
   padding: 2px 4px;
-  background: #00a27a;
-  color: #fff;
+  background: var(--completed);
+  color: var(--white);
   border-radius: 10px;
   font-size: 14px;
   font-weight: 500;
@@ -360,8 +528,8 @@ input[type="number"] {
   width: 100px;
   text-align: center;
   padding: 2px 4px;
-  background: #cf4f51;
-  color: #fff;
+  background: var(--rejected);
+  color: var(--white);
   border-radius: 10px;
   font-size: 14px;
   font-weight: 500;
@@ -371,36 +539,36 @@ input[type="number"] {
   width: 100px;
   text-align: center;
   padding: 2px 4px;
-  background: #c2701b;
-  color: #fff;
+  background: var(--successfully);
+  display: flex;
+  align-items: center;
+  color: var(--white);
   border-radius: 10px;
   font-size: 14px;
   font-weight: 500;
 }
 
-/* .checkbox-group label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-} */
-
+/* Deposit Page Checkbox */
+.checkbox-group {
+  margin: 10px;
+}
 .checkbox-group input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 16px;
   height: 16px;
-  border: 2px solid #ccc;
+  border: 2px solid var(--chinesesliver);
   border-radius: 4px;
   margin-right: 8px;
 }
 
 .checkbox-group input[type="checkbox"]:checked {
-  background-color: #ccc;
+  background-color: var(--chinesesliver);
 }
 
 .checkbox-label {
+  margin: auto;
   font-size: 16px;
 }
 
@@ -441,6 +609,11 @@ input[type="number"] {
   flex-direction: row;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .history {
   width: 100%;
   align-self: flex-start;
@@ -451,19 +624,10 @@ input[type="number"] {
 }
 
 .history-row2 {
-  border-top: 2px solid #fff;
+  border-top: 2px solid var(--white);
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-}
-
-.space-between {
-  display: flex;
-  justify-content: space-between;
-}
-
-.align-center {
-  align-items: center;
 }
 
 .label {
@@ -471,17 +635,19 @@ input[type="number"] {
   line-height: 70px;
 }
 
-.grid {
-  row-gap: 20px;
+.small {
+  width: 85%;
+  height: 15%;
 }
 
-.full {
-  width: 100%;
+.box.small.left {
+  align-self: flex-start;
+  margin-right: auto;
 }
 
 .image {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
 }
 
 .icon-image {
@@ -524,4 +690,17 @@ input[type="number"] {
   height: 50px;
   border-radius: 50%;
   background-color: #fff;
+}
+
+.toggle-password {
+  position: absolute;
+  transform: translate(0-50%);
+  right: 33%;
+  top: 59%;
+  cursor: pointer;
+}
+
+.big-title {
+  font-weight: 700;
+  font-size: 1.5rem;
 }

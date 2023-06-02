@@ -20,6 +20,9 @@ import Withdraw2 from "./Pages/Withdraw2";
 import Notice from "./Pages/Notice";
 import EditPersonal from "./Pages/Edit_Personal";
 import WithdrawPassword from "./Pages/Withdraw_Password";
+import Game from "./Pages/Game";
+import Deposit from "./Pages/Deposit";
+import Withdraw3 from "./Pages/Withdraw3";
 
 function App() {
   return (
@@ -42,9 +45,12 @@ function App() {
         <Route path="/events" element={<Event />} />
         <Route path="/withdraw_his" element={<Withdraw1 />} />
         <Route path="/withdraw_now" element={<Withdraw2 />} />
+        <Route path="/withdraw" element={<Withdraw3 />} />
         <Route path="/notification" element={<Notice />} />
         <Route path="/change_profile" element={<EditPersonal />} />
         <Route path="/change_withdraw_pwd" element={<WithdrawPassword />} />
+        <Route path="/game_start" element={<Game />} />
+        <Route path="/deposit" element={<Deposit />} />
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
     </div>

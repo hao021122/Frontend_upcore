@@ -40,8 +40,7 @@ export default function Login() {
         <p>Login to</p>
         <p>Your Account</p>
         <div className="register-text-small">
-        <p>Sign with Username or email and</p>
-        <p>password to use your account</p>
+          <p>Sign with Username or email and password to use your account</p>
         </div>
       </div>
 
@@ -54,32 +53,39 @@ export default function Login() {
         validationSchema={validationSchema}
       >
         <Form className="formContainer">
-          <Field
-            id="username"
-            name="username"
-            type="text"
-            placeholder="Username"
-          />
-          <Field
-            id="password"
-            name="password"
-            type={showPassword ? "text" : "password"}
-            placeholder="Password"
-          />
-          <span className="toggle-password" onClick={togglePasswordVisibility}>
-            {showPassword ? <VisibilityOff /> : <Visibility />}
-          </span>
+          <div className="input-field space-between">
+            <Field
+              id="username"
+              name="username"
+              type="text"
+              placeholder="Username"
+            />
+          </div>
+          <div className="input-field space-between">
+            <Field
+              id="password"
+              name="password"
+              type={showPassword ? "text" : "password"}
+              placeholder="Password"
+            />
+            <span
+              className="toggle-password"
+              onClick={togglePasswordVisibility}
+            >
+              {showPassword ? <VisibilityOff /> : <Visibility />}
+            </span>
+          </div>
 
           <div className="button">
             <div className="sign-up">Sign in</div>
-            <div className="sign-up use-phone">
+            <div className="sign-up create-account">
               <Link to="/register">Create Account</Link>
             </div>
           </div>
         </Form>
       </Formik>
       <div className="link opt">
-        <Link className="links" to="/">
+        <Link className="link" to="/">
           Forget Password
         </Link>
       </div>

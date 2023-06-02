@@ -21,14 +21,20 @@ export default function Withdraw() {
 
       <div className="history">
         <div className="history-row1">
-          <span className="content-text">
+          <span className="content-text white">
             <p>Withdraw History</p>
             <p>$8,420.00</p>
           </span>
         </div>
-        <div className="history-row2">
-          <span>* You will receive your withdrawal within an hour</span>
-          <span className="status successfully">Successfully</span>
+        <div className="history-row2 flex-row space-between">
+          <div className="data ">
+            <span className="white">
+              * You will receive your withdrawal within an hour
+            </span>
+          </div>
+          <div className="data ">
+            <span className="status successfully">Successfully</span>
+          </div>
         </div>
       </div>
 

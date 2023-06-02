@@ -8,7 +8,7 @@ import profileImage from "../assets/profile.svg";
 export default function Footer() {
   return (
     <div className="footer">
-      <ul>
+      <ul className="ul-list">
         <li className="list btn">
           <a href="">
             <span className="f-icon">

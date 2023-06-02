@@ -7,7 +7,7 @@ export default function success() {
     <div className="center">
       <img className="image" src={Success} />
       <div className="welcome">
-        <h1>Account Created Successfully!</h1>
+        <p>Account created successfully</p>
       </div>
 
       <div className="sign-up">Continue</div>

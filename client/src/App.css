@@ -29,7 +29,10 @@ body {
 }
 
 .welcome {
-  margin: 150px;
+  margin: 100px;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
 }
 
 .button {
@@ -42,11 +45,11 @@ body {
   background-color: #e6c222; /* Yellow */
   color: #322f32; /* Grey */
   width: 350px;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 16px 32px;
   text-align: center;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -212,7 +215,7 @@ input[type="number"] {
   height: auto;
   padding: 20px;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: #e6c222;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
 }
 
@@ -236,7 +239,10 @@ input[type="number"] {
   width: 100%; /* Add this property */
   padding: 10px;
 }
+.ul-list{
 
+  color: #e6c222;
+}
 .list {
   display: flex;
   flex-direction: column;
@@ -476,8 +482,8 @@ input[type="number"] {
 }
 
 .image {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
 }
 
 .icon-image {

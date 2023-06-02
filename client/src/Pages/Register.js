@@ -19,15 +19,15 @@ export default function Register() {
     password: Yup.string()
       .min(4)
       .max(12)
-      .required("Please Enter Your Password!!"),
+      .required("Please Enter Your Password."),
     phoneNumber: Yup.string()
       .min(10)
       .max(11)
-      .required("Please Enter Phone Number!!"),
+      .required("Please Enter Phone Number."),
     withdrawPassword: Yup.string()
       .min(8)
       .max(12)
-      .required("Please Enter Withdraw Password!!"),
+      .required("Please Enter Withdraw Password."),
     partyCode: Yup.string(),
   });
 
@@ -46,8 +46,8 @@ export default function Register() {
       <img className="logo" src={Logo} />
 
       <div className="welcome register-text">
-        <h1>Create</h1>
-        <h1>Your Account</h1>
+        <p>Create</p>
+        <p>Your Account</p>
       </div>
 
       <Formik

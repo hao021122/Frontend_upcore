@@ -7,7 +7,8 @@ export default function failed() {
     <div className="center">
       <img className="image" src={Failed} />
       <div className="welcome">
-        <h1>Invalid username, please try again</h1>
+        <p>Invalid username,</p>
+        <p>please try again</p>
       </div>
 
       <div className="sign-up">Return</div>

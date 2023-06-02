@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import Back from "../Components/Back";
+import Back from "../Components/back";
 import About from "../assets/about.svg";
 import Footer from "../Components/Footer";
 
@@ -22,13 +22,13 @@ export default function Aboutus() {
       <div className="box">
         <div className="content">
           <p>
-            TEACODE provides developers, agencies and merchants around the world
-            with the tools and infrastructure to sell on the internet the way
-            they want. From newly established startups to large enterprises, our
-            customizable backend creates innova=ve shopping experiences today
-            and is ready for what comes next. Crea=ng the best headless
-            ecommerce plaAorm requires not only a bold product vision, but also
-            ac=onable values that guide our day-to-day work and decisions.
+            TEACODE provides developers, agencies and merchants around the world
+            with the tools and infrastructure to sell on the internet the way
+            they want. From newly established startups to large enterprises, our
+            customizable backend creates innovative shopping experiences today
+            and is ready for what comes next. Creating the best headless
+            e-commerce platform requires not only a bold product vision, but also
+            actionable values that guide our day-to-day work and decisions.
           </p>
         </div>
       </div>

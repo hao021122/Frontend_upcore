@@ -51,7 +51,7 @@ export default function Home() {
           <div className="history-row1 flex-row space-between">
             <div>
               <span className="content-text">
-                <p className="title">Active Total Balance</p>
+                <p className="title white">Active Total Balance</p>
                 <p className="dollar">$8,888.00</p>
               </span>
             </div>
@@ -63,7 +63,7 @@ export default function Home() {
           </div>
           <div className="history-row2 flex-row space-between">
             <div className="data">
-              <div className="title">Party Code</div>
+              <div className="title white">Party Code</div>
             </div>
             <div className="data">
               <div className="circle">
@@ -124,7 +124,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="card one">
+        <div className="card2">
           <div className="cardBox" onClick={handelToEvent}>
             <span className="icon">
               <img className="home-icon" src={eventImage} />
@@ -133,7 +133,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="card">
+        <div className="card3">
           <div className="cardBox flex-row">
             <span className="icon">
               <img className="home-icon" src={Bronze} />

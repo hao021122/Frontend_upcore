@@ -35,9 +35,11 @@ export default function Bank() {
           <div className="title">Deposit</div>
         </div>
         <div className="third-row">
-          <p>Dear users, in order to protect the security</p>
-          <p>of your fund, please do not enter your bank card password.</p>
-          <p>Our staff will not ask you to enter your bank card PIN.</p>
+          <p>
+            Dear users, in order to protect the security of your fund, please do
+            not enter your bank card password. Our staff will not ask you to
+            enter your bank card PIN.
+          </p>
         </div>
       </div>
 
@@ -51,40 +53,47 @@ export default function Bank() {
       >
         <Form className="formContainer">
           <ErrorMessage className="errorMsg" name="fullName" component="span" />
-          <Field
-            autoComplete="off"
-            type="text"
-            name="fullName"
-            placeholder="Full Name"
-          />
+          <div className="input-field space-between">
+            <Field
+              autoComplete="off"
+              type="text"
+              name="fullName"
+              placeholder="Full Name"
+            />
+          </div>
           <div className="checkbox-group">
-            <label>
+            <label className="white">
               <Field type="checkbox" name="wallet" className="wallet" />
               Wallet Address
             </label>
-            <label>
+            <label className="white">
               <Field type="checkbox" name="bank" className="bank" />
               Bank Card
             </label>
           </div>
+
           <ErrorMessage
             className="errorMsg"
             name="bankAccountNumber"
             component="span"
           />
-          <Field
-            autoComplete="off"
-            type="text"
-            name="bankAccountNumber"
-            placeholder="Bank Account Number"
-          />
+          <div className="input-field space-between">
+            <Field
+              autoComplete="off"
+              type="text"
+              name="bankAccountNumber"
+              placeholder="Bank Account Number"
+            />
+          </div>
           <ErrorMessage className="errorMsg" name="bankName" component="span" />
-          <Field
-            autoComplete="off"
-            type="text"
-            name="bankName"
-            placeholder="Bank Name"
-          />
+          <div className="input-field space-between">
+            <Field
+              autoComplete="off"
+              type="text"
+              name="bankName"
+              placeholder="Bank Name"
+            />
+          </div>
 
           <div className="button">
             <div className="sign-up">Confirm</div>

@@ -46,8 +46,7 @@ export default function Register() {
       <img className="logo" src={Logo} />
 
       <div className="welcome register-text">
-        <p>Create</p>
-        <p>Your Account</p>
+        <p>Create Your Account</p>
       </div>
 
       <Formik
@@ -57,57 +56,67 @@ export default function Register() {
       >
         <Form className="formContainer">
           <ErrorMessage className="errorMsg" name="username" component="span" />
-          <Field
-            autoComplete="off"
-            // id="inputCreatePost"
-            type="text"
-            name="username"
-            placeholder="Username"
-          />
+          <div className="input-field space-between">
+            <Field
+              autoComplete="off"
+              // id="inputCreatePost"
+              type="text"
+              name="username"
+              placeholder="Username"
+            />
+          </div>
           <ErrorMessage className="errorMsg" name="password" component="span" />
-          <Field
-            autoComplete="off"
-            // id="inputCreatePost"
-            type="password"
-            name="password"
-            placeholder="Password"
-          />
+          <div className="input-field space-between">
+            <Field
+              autoComplete="off"
+              // id="inputCreatePost"
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
           <ErrorMessage
             className="errorMsg"
             name="phoneNumber"
             component="span"
           />
-          <Field
-            autoComplete="off"
-            // id="inputCreatePost"
-            type="text"
-            name="phoneNumber"
-            placeholder="Phone Number"
-          />
+          <div className="input-field space-between">
+            <Field
+              autoComplete="off"
+              // id="inputCreatePost"
+              type="text"
+              name="phoneNumber"
+              placeholder="Phone Number"
+            />
+          </div>
           <ErrorMessage
             className="errorMsg"
             name="withdrawPassword"
             component="span"
           />
-          <Field
-            autoComplete="off"
-            // id="inputCreatePost"
-            type="password"
-            name="withdrawPassword"
-            placeholder="Withdraw Password"
-          />
+          <div className="input-field space-between">
+            <Field
+              autoComplete="off"
+              // id="inputCreatePost"
+              type="password"
+              name="withdrawPassword"
+              placeholder="Withdraw Password"
+            />
+          </div>
           <ErrorMessage
             className="errorMsg"
             name="partyCode"
             component="span"
           />
-          <Field
-            autoComplete="off"
-            // id="inputCreatePost"
-            type="text"
-            name="partyCode"
-            placeholder="Party Code"
-          />
+          <div className="input-field space-between">
+            <Field
+              autoComplete="off"
+              // id="inputCreatePost"
+              type="text"
+              name="partyCode"
+              placeholder="Party Code"
+            />
+          </div>
           <div className="checkbox-field">
             <Field
               type="checkbox"

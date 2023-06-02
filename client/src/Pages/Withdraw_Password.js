@@ -40,7 +40,7 @@ export default function Withdraw_Password() {
           validationSchema={validationSchema}
         >
           <Form className="formContainer grid">
-            <p>Change Login Password</p>
+            <p className="white">Change Login Password</p>
             <div className="box small left space-between">
               <span className="label">Old Password</span>
               <Field

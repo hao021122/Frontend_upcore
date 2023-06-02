@@ -30,10 +30,11 @@ export default function Levels() {
             </span>
             <span className="content-text">
               <p>Bronze Level</p>
-              <p className="dollar">USDT 100.00</p>
-              <p>0.25% profit per transactions, 1</p>
-              <p>withdrawal after completing 20</p>
-              <p>transactions per day, 0% handling fee</p>
+              <p className="dollar">USDT 100.00</p>{" "}
+              <p>
+                0.25% profit per transactions, 1 withdrawal after completing 20
+                transactions per day, 0% handling fee
+              </p>
             </span>
           </div>
         </div>
@@ -45,9 +46,10 @@ export default function Levels() {
             <span className="content-text">
               <p>Sliver Level</p>
               <p className="dollar">USDT 200.00</p>
-              <p>0.30% profit per transactions. Complete</p>
-              <p>20 transactions every day, can</p>
-              <p>withdraw 1 time, fee 3%</p>
+              <p>
+                0.30% profit per transactions. Complete 20 transactions every
+                day, can withdraw 1 time, fee 3%
+              </p>
             </span>
           </div>
         </div>
@@ -59,9 +61,10 @@ export default function Levels() {
             <span className="content-text">
               <p>Gold Level</p>
               <p className="dollar">USDT 300.00</p>
-              <p>0.35% profit per transactions. Complete</p>
-              <p>30 transactions every day, can</p>
-              <p>withdraw 2 time, 2% handling fee</p>
+              <p>
+                0.35% profit per transactions. Complete 30 transactions every
+                day, can withdraw 2 time, 2% handling fee
+              </p>
             </span>
           </div>
         </div>

@@ -15,7 +15,7 @@ export default function Landing() {
       </div>
 
       <div className="welcome">
-        <h1>Welcome</h1>
+        <p>Welcome</p>
       </div>
 
       <div className="button">

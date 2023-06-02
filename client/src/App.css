@@ -109,6 +109,7 @@ body {
 
 .register-text-small {
   color: #ffffff8c; /*Light Yellow */
+  text-align: center;
 }
 
 .formContainer {
@@ -262,6 +263,7 @@ input[type="number"] {
   border-radius: 20px;
   width: 40%;
   line-height: 90px;
+  background-color: #fff;
 }
 
 .footer ul li {
@@ -278,7 +280,7 @@ input[type="number"] {
 .footer ul li a .f-icon {
   position: relative;
   display: block;
-  line-height: 25px;
+  line-height: 0px;
   text-align: center;
 }
 
@@ -287,7 +289,7 @@ input[type="number"] {
   display: block;
   line-height: 55px;
   text-align: center;
-  color: #fff;
+  color: #322f32;
 }
 
 /* Transaction History */

@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import homeImage from "../assets/home.svg";
 import playImage from "../assets/play.svg";
 import bellImage from "../assets/ringtone.svg";
 import profileImage from "../assets/profile.svg";
@@ -12,7 +13,7 @@ export default function Footer() {
         <li className="list btn">
           <a href="">
             <span className="f-icon">
-              <HomeOutlinedIcon sx={{ fontSize: 30, color: "#fff" }} />
+              <img className="footer-image" src={homeImage} />
             </span>
             <span className="f-title">Home</span>
           </a>

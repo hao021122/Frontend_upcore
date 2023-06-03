@@ -282,6 +282,7 @@ input[type="number"] {
   font-size: 1rem;
   margin: 10px;
   color: var(--lightGrey);
+  outline: none;
 }
 
 /* Register Checkbox */
@@ -372,7 +373,7 @@ input[type="number"] {
   flex-direction: column;
   align-self: start;
   margin: 10px;
-  width: 100%;
+  width: 98%;
 }
 
 .first-row {
@@ -618,6 +619,14 @@ input[type="number"] {
 .box.small.right {
   align-self: flex-end;
   margin-left: auto;
+}
+
+.border-bottom {
+  border-bottom: 2px solid var(--black);
+}
+
+.label-field {
+  margin: 10px;
 }
 
 /* Responsive Start */

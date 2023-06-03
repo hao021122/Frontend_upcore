@@ -2,17 +2,18 @@ import React from "react";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
 import WhatsAppIcon from "../assets/whatsapp.png";
-import termImage from "../assets/terms.svg";
-import aboutImage from "../assets/about.svg";
-import certImage from "../assets/Certificate.svg";
-import withdrawImage from "../assets/withdraw.svg";
-import bankImage from "../assets/bank.svg";
+import termImage from "../assets/terms-black.svg";
+import aboutImage from "../assets/about-black.svg";
+import certImage from "../assets/Certificate-black.svg";
+import withdrawImage from "../assets/withdraw-black.svg";
+import bankImage from "../assets/bank-black.svg";
 import faqImage from "../assets/faq.svg";
-import eventImage from "../assets/event.svg";
+import eventImage from "../assets/event-black.svg";
 import Bronze from "../assets/bronze.svg";
 import Sliver from "../assets/silver.svg";
 import Gold from "../assets/gold.svg";
 import Footer from "../Components/Footer";
+import copyImage from "../assets/copy.svg";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -63,7 +64,10 @@ export default function Home() {
           </div>
           <div className="history-row2 flex-row space-between">
             <div className="data">
-              <div className="title white">Party Code</div>
+              <div className="title white">
+                Party Code
+              <img className="copy-icon" src={copyImage} />
+              </div>
             </div>
             <div className="data">
               <div className="circle">
@@ -140,8 +144,10 @@ export default function Home() {
             </span>
             <span className="title">
               <p>Bronze Member</p>
+              <div className="content">
               <p>0.25% profit per trade</p>
               <p>20 trades/day</p>
+              </div>
             </span>
           </div>
           <div className="cardBox flex-row">
@@ -150,8 +156,10 @@ export default function Home() {
             </span>
             <span className="title">
               <p>Sliver Member</p>
-              <p>0.30% profit per trade</p>
-              <p>20 trades/day</p>
+              <div className="content">
+                <p>0.30% profit per trade</p>
+                <p>20 trades/day</p>
+              </div>             
             </span>
           </div>
           <div className="cardBox flex-row">
@@ -160,8 +168,10 @@ export default function Home() {
             </span>
             <span className="title">
               <p>Gold Member</p>
+              <div className="content">
               <p>0.30% profit per trade</p>
               <p>20 trades/day</p>
+              </div>
             </span>
           </div>
         </div>

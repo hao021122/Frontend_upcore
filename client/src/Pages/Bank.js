@@ -23,8 +23,9 @@ export default function Bank() {
   });
 
   return (
-    <div className="center">
+    <div className="center">     
       <div className="header">
+      <div className="bank-margin">
         <div className="first-row">
           <Back />
         </div>
@@ -36,11 +37,12 @@ export default function Bank() {
         </div>
         <div className="third-row">
           <p>
-            Dear users, in order to protect the security of your fund, please do
-            not enter your bank card password. Our staff will not ask you to
-            enter your bank card PIN.
+            Dear users, in order to protect the security of your fund, 
+            <br></br>please do not enter your bank card password. 
+            <br></br>Our staff will not ask you to enter your bank card PIN.
           </p>
         </div>
+      </div>
       </div>
 
       <Formik

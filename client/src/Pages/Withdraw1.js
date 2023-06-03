@@ -2,7 +2,9 @@ import React from "react";
 import "../App.css";
 import Back from "../Components/back";
 import withdrawImage from "../assets/withdraw.svg";
+import bankImage from "../assets/bank-black.svg";
 import Footer from "../Components/Footer";
+
 
 export default function Withdraw() {
   return (
@@ -41,7 +43,9 @@ export default function Withdraw() {
       <div className="bigBox">
         <div className="box">
           <div className="content space-between align-center">
-            <span className="icon"></span>
+            <span className="icon">
+              <img className="image" src={bankImage} />
+            </span>
             <span className="content-text">
               <p>2021-12-22 | 12:23 PM</p>
               <p className="dollar">200.00</p>
@@ -52,7 +56,9 @@ export default function Withdraw() {
         </div>
         <div className="box">
           <div className="content space-between align-center">
-            <span className="icon"></span>
+            <span className="icon">
+              <img className="image" src={bankImage} />
+            </span>
             <span className="content-text">
               <p>2021-12-22 | 12:23 PM</p>
               <p className="dollar">200.00</p>
@@ -63,7 +69,9 @@ export default function Withdraw() {
         </div>
         <div className="box">
           <div className="content space-between align-center">
-            <span className="icon"></span>
+            <span className="icon">
+             <img className="image" src={bankImage} />
+            </span>
             <span className="content-text">
               <p>2021-12-22 | 12:23 PM</p>
               <p className="dollar">200.00</p>

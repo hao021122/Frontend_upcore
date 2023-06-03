@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import Back from "../Components/back";
 import certImage from "../assets/Certificate.svg";
+import Certification from "../assets/certPic.png";
 import Footer from "../Components/Footer";
 
 export default function Cert() {
@@ -20,7 +21,9 @@ export default function Cert() {
       </div>
 
       <div className="box">
-        <div className="content"></div>
+        <div className="content">
+        <img className="" src={Certification} />
+        </div>
       </div>
       <Footer />
     </div>

@@ -50,7 +50,7 @@ export default function Withdraw() {
         </div>
         <div className="history-row2 flex-row space-between">
           <div className="data white">
-            <span>21 July 2020, 10: 38 AM</span>
+            <span className="white">21 July 2020, 10:38 AM</span>
           </div>
           <div className="data white">
             <span className="status successfully">Successfully</span>
@@ -65,7 +65,9 @@ export default function Withdraw() {
             name="withdrawAmount"
             component="span"
           />
-          <div className="input-field space-between">
+          <div className="input-field space-between withdraw-input-field">
+            <div className="flex">
+          <span className="withdraw-label">Withdraw Amount</span>
             <Field
               autoComplete="off"
               // id="inputCreatePost"
@@ -73,20 +75,24 @@ export default function Withdraw() {
               name="withdrawAmount"
               placeholder="TYPE HERE"
             />
+            </div>
           </div>
           <ErrorMessage
             className="errorMsg"
             name="withdrawPassword"
             component="span"
           />
-          <div className="input-field space-between">
+          <div className="input-field space-between withdraw-input-field">
+            <div className="flex">          
+          <span className="withdraw-label">Withdraw Password</span>
             <Field
               autoComplete="off"
               // id="inputCreatePost"
               type="text"
               name="withdrawPassword"
               placeholder="TYPE HERE"
-            />
+            /> 
+            </div>
           </div>
         </Form>
       </Formik>

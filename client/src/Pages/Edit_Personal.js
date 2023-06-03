@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 
 import Back from "../Components/back";
+import profileImage from "../assets/profile.svg";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Footer from "../Components/Footer";
@@ -15,7 +16,7 @@ export default function Edit_Personal() {
         </div>
         <div className="second-row">
           <span className="icon">
-            <AccountCircleOutlinedIcon sx={{ fontSize: 30, color: "#fff" }} />
+          <img className="icon-image" src={profileImage} />
           </span>
           <span className="title">Edit Personal</span>
         </div>
@@ -23,7 +24,7 @@ export default function Edit_Personal() {
 
       <div className="bigBox">
         <div className="box small left">
-          <div className="flex-row space-between">
+          <div className="flex-row space-between personal-padding">
             <div>
               <span>Profile Image</span>
             </div>
@@ -34,31 +35,39 @@ export default function Edit_Personal() {
                 />
               </span>
               <span>
-                <ArrowForwardIosIcon />
+                <ArrowForwardIosIcon sx={{ fontSize: 15, color: "yellow" }}/>
               </span>
             </div>
           </div>
-          <div className="flex-row space-between">
+          <hr></hr>
+          <div className="flex-row space-between personal-padding">
             <span>Username</span>
             <div>
               <span>Testing 123</span>
             </div>
           </div>
-          <div className="flex-row space-between">
+          <hr></hr>
+          <div className="flex-row space-between personal-padding">
             <span>Gender</span>
             <div>
               <span>Male</span>
               <span>
-                <ArrowForwardIosIcon />
+              <ArrowForwardIosIcon sx={{ fontSize: 15, color: "yellow" }}/>
               </span>
             </div>
           </div>
         </div>
-        <div className="box small right flex-column ">
-          <span>Change Withdraw Password</span>
-          <span>Change Security PIN</span>
+        <div className="box small right flex-column">
+          <div className="personal-padding">
+            <span>Change Withdraw Password</span>
+          </div>
+          <hr></hr>
+          <div className="personal-padding">
+            <span>Change Security PIN</span>
+          </div>
+
         </div>
-        <div className="box small left">logout</div>
+        <div className="box small left personal-logout">Logout</div>
       </div>
       <Footer />
     </div>

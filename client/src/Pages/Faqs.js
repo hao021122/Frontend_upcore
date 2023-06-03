@@ -14,16 +14,16 @@ export default function Faqs() {
       title: "Credit",
       content: (
         <div>
-          Please do not use the same personal bank cardinformation to register
-          repeatedly. Once found, itwill be processed for a specifc
-          account.Personal multi-account driving sales will lead to
-          thesuspension of the seller&#39;s store, aecting theseller&#39;s
-          reputation, and the sales and sales willbe invalid. The platform
-          prohibits one card frombeing bound to multiple accounts. Do not
-          usemultiple personal accounts. One card bound tomultiple accounts will
-          cause the funds to be frozenfor 90 days and the account will be
-          permanentlyfrozen! The platform is designed to prevent peoplefrom
-          maliciously laundering money or cashing out arange of misconduct
+          Please do not use the same personal bank card information to register
+          repeatedly. Once found, it will be processed for a specifc
+          account. Personal multi-account driving sales will lead to
+          the suspension of the seller's store, affecting the seller's
+          reputation, and the sales and sales will be invalid. The platform
+          prohibits one card from being bound to multiple accounts. Do not
+          use multiple personal accounts. One card bound to multiple accounts will
+          cause the funds to be frozen for 90 days and the account will be
+          permanently frozen! The platform is designed to prevent people from
+          maliciously laundering money or cashing out arange of misconduct.
         </div>
       ),
     },
@@ -94,16 +94,16 @@ export default function Faqs() {
         <div className="content flex-column">
           <p className="big-title">Tips</p>
           <p>
-            Please do not use the same personal bank cardinformation to register
-            repeatedly. Once found, itwill be processed for a specifc
-            account.Personal multi-account driving sales will lead to
-            thesuspension of the seller&#39;s store, aecting theseller&#39;s
-            reputation, and the sales and sales willbe invalid. The platform
-            prohibits one card frombeing bound to multiple accounts. Do not
-            usemultiple personal accounts. One card bound tomultiple accounts
-            will cause the funds to be frozenfor 90 days and the account will be
-            permanentlyfrozen! The platform is designed to prevent peoplefrom
-            maliciously laundering money or cashing out arange of misconduct
+          Please do not use the same personal bank card information to register
+          repeatedly. Once found, it will be processed for a specifc
+          account. Personal multi-account driving sales will lead to
+          the suspension of the seller's store, affecting the seller's
+          reputation, and the sales and sales will be invalid. The platform
+          prohibits one card from being bound to multiple accounts. Do not
+          use multiple personal accounts. One card bound to multiple accounts will
+          cause the funds to be frozen for 90 days and the account will be
+          permanently frozen! The platform is designed to prevent people from
+          maliciously laundering money or cashing out arange of misconduct.
           </p>
           <div className="tabs">
             <div className="tab-header">

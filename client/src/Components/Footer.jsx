@@ -44,7 +44,7 @@ export default function Footer() {
         </li>
         <li className="list" onClick={handleToEditProfile}>
           <a href="">
-            <span className="icon">
+            <span className="icon last-icon">
               <img className="footer-image" src={profileImage} />
             </span>
           </a>

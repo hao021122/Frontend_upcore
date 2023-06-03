@@ -21,6 +21,7 @@ export default function Withdraw_Password() {
   });
   return (
     <div className="center">
+      <div className="withdraw-password-margin">
       <div className="header">
         <div className="first-row">
           <Back />
@@ -41,8 +42,8 @@ export default function Withdraw_Password() {
         >
           <Form className="formContainer grid">
             <p className="white">Change Login Password</p>
-            <div className="box small left space-between">
-              <span className="label">Old Password</span>
+            <div className="box small left space-between withdraw-password-box">
+              <span className="label withdraw-password-fontsize">Old Password</span>
               <Field
                 id="password"
                 name="oldPassword"
@@ -51,7 +52,7 @@ export default function Withdraw_Password() {
               />
             </div>
             <div className="box small right space-between">
-              <span className="label">New Password</span>
+              <span className="label withdraw-password-fontsize">New Password</span>
               <Field
                 id="password"
                 name="newPassword"
@@ -60,7 +61,7 @@ export default function Withdraw_Password() {
               />
             </div>
             <div className="box small left space-between">
-              <span className="label">Confirm New Password</span>
+              <span className="label withdraw-password-fontsize">Confirm New Password</span>
               <Field
                 id="password"
                 name="confirmNewPassword"
@@ -71,8 +72,15 @@ export default function Withdraw_Password() {
             <div className="button">
               <div className="sign-up full">Confirm</div>
             </div>
+            <div className="flex">
+        
+        <span className="title white">
+          Forgot the old password, please contact customer service to retrieve it
+        </span>
+      </div>
           </Form>
         </Formik>
+      </div>
       </div>
 
       <Footer />

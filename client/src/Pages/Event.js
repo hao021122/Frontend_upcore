@@ -3,13 +3,14 @@ import "../App.css";
 import Back from "../Components/back";
 import eventImage from "../assets/event.svg";
 import Footer from "../Components/Footer";
+import eventPic from "../assets/eventPic.png";
 
 export default function Event() {
   const slides = [
     {
       title: "Slide 1",
       description: "This is the first slide.",
-      imageUrl: "https://example.com/slide1.jpg",
+      imageUrl: eventPic,
     },
     {
       title: "Slide 2",
@@ -51,9 +52,10 @@ export default function Event() {
       <div className="box">
         <div className="content">
           <h2>{slide.title}</h2>
-          <img src={slide.imageUrl} alt={slide.title} />
+          <span className="eventImg">
+            <img src={slide.imageUrl} alt={slide.title} />
+          </span>         
           <p>{slide.description}</p>
-
           <button onClick={goToPrevSlide}>Previous</button>
           <button onClick={goToNextSlide}>Next</button>
         </div>

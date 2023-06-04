@@ -1,6 +1,5 @@
 import React from "react";
 import "../App.css";
-
 import Back from "../Components/back";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";

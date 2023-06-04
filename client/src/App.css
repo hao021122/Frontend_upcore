@@ -658,10 +658,45 @@ input[type="number"] {
   padding: 20px;
 }
 
+/* Events */
+.carousels {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  position: absolute;
+  color: var(--white);
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%);
+  color: var(--white);
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.arrow-left {
+  left: 1rem;
+}
+
+.arrow-right {
+  right: 1rem;
+  transform: rotate(180deg);
+}
+
+.big-image {
+  width: 350px;
+}
+
 /* Responsive Start */
-@media screen and (max-width: 450px) {
+/* Mobile */
+@media screen and (min-width: 350px) and (max-width: 767px) {
   .center {
-    width: 370px;
+    width: fit-content;
+    padding: 20px;
   }
   .card {
     grid-template-columns: repeat(2, 1fr);
@@ -675,4 +710,8 @@ input[type="number"] {
   .small {
     width: 90%;
   }
+}
+
+/* Tablets */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
 }

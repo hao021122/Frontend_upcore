@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import "../App.css";
 import Back from "../Components/back";
 import eventImage from "../assets/event.svg";
+import Bronze from "../assets/bronze.svg";
+import Sliver from "../assets/silver.svg";
+import Gold from "../assets/gold.svg";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import Footer from "../Components/Footer";
 
 export default function Event() {
@@ -9,12 +13,20 @@ export default function Event() {
     {
       title: "Slide 1",
       description: "This is the first slide.",
-      imageUrl: "https://example.com/slide1.jpg",
+      imageUrl: Bronze,
+      alt: "Slider 1",
     },
     {
       title: "Slide 2",
       description: "This is the second slide.",
-      imageUrl: "https://example.com/slide2.jpg",
+      imageUrl: Sliver,
+      alt: "Slider 2",
+    },
+    {
+      title: "Slide 3",
+      description: "This is the second slide.",
+      imageUrl: Gold,
+      alt: "Slider 3",
     },
     // Add more slides here...
   ];
@@ -48,16 +60,18 @@ export default function Event() {
         </div>
       </div>
 
-      <div className="box">
+      <div className="carousels">
         <div className="content">
-          <h2>{slide.title}</h2>
-          <img src={slide.imageUrl} alt={slide.title} />
-          <p>{slide.description}</p>
-
-          <button onClick={goToPrevSlide}>Previous</button>
-          <button onClick={goToNextSlide}>Next</button>
+          <div onClick={goToPrevSlide}>
+            <ArrowBackIosIcon className="arrow arrow-left" />
+          </div>
+          <img className="big-image" src={slide.imageUrl} alt={slide.title} />
+          <div onClick={goToNextSlide}>
+            <ArrowBackIosIcon className="arrow arrow-right" />
+          </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

@@ -11,6 +11,9 @@ export default function Footer() {
   const handleToHome = () => {
     navigate("/home");
   };
+  const handleToGame = () => {
+    navigate("/game_start");
+  };
   const handleToNotice = () => {
     navigate("/notification");
   };
@@ -28,7 +31,7 @@ export default function Footer() {
             <span className="f-title">Home</span>
           </a>
         </li>
-        <li className="list">
+        <li className="list" onClick={handleToGame}>
           <a href="">
             <span className="icon">
               <img className="footer-image" src={playImage} />

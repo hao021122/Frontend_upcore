@@ -103,6 +103,10 @@ body {
   font-size: 1.5rem;
 }
 
+.small-font {
+  font-size: 0.65rem;
+}
+
 .dollar {
   font-size: 2rem;
   color: var(--gold);
@@ -627,6 +631,31 @@ input[type="number"] {
 
 .label-field {
   margin: 10px;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.deposit {
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.progress-container {
+  padding: 20px;
+}
+
+.flex-end {
+  align-self: flex-end;
+}
+
+.padding {
+  padding: 20px;
 }
 
 /* Responsive Start */
